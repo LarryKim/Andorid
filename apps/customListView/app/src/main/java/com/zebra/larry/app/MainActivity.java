@@ -46,7 +46,6 @@ public class MainActivity extends Activity {
     private ActionBar mActionBar;
     private Button mBtnWebView;
     private Button mBtnListView;
-    private WebView mWebView;
     private TextView mTvTitleActionBar;
 
     @Override
@@ -188,23 +187,23 @@ public class MainActivity extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
             int position = getArguments().getInt(ARG_SECTION_NUMBER) - 1;
-            WebView mWebView = (WebView) rootView.findViewById(R.id.webView);
-            ListView mListView = (ListView) rootView.findViewById(R.id.listView);
+            WebView webView = (WebView) rootView.findViewById(R.id.webView);
+            ListView listView = (ListView) rootView.findViewById(R.id.listView);
 
             //Log.d(TAG, "position: " + position);
             switch (position) {
                 case POSITION_WEB_VIEW:
-                    mWebView.setVisibility(View.VISIBLE);
-                    mListView.setVisibility(View.INVISIBLE);
-                    mWebView.loadUrl(WEB_VIWE_URL);
+                    webView.setVisibility(View.VISIBLE);
+                    listView.setVisibility(View.INVISIBLE);
+                    webView.loadUrl(WEB_VIWE_URL);
 
                     // For opening a web-page on the webview
-                    mWebView.setWebViewClient(new WebViewClient());
+                    webView.setWebViewClient(new WebViewClient());
                     setRetainInstance(true);
                     break;
                 case POSITION_LIST_VIEW:
-                    mWebView.setVisibility(View.INVISIBLE);
-                    mListView.setVisibility(View.VISIBLE);
+                    webView.setVisibility(View.INVISIBLE);
+                    listView.setVisibility(View.VISIBLE);
                     String[] arrItems = getResources().getStringArray(R.array.items_array);
                     Integer[] images = { R.drawable.ic_launcher,
                             R.drawable.ic_launcher };
@@ -223,7 +222,7 @@ public class MainActivity extends Activity {
                     // Set custom ListView Adapter
                     CustomListViewAdapter adapter = new CustomListViewAdapter(getActivity(),
                             R.layout.list_item, rowItems);
-                    mListView.setAdapter(adapter);
+                    listView.setAdapter(adapter);
                     break;
             }
 
