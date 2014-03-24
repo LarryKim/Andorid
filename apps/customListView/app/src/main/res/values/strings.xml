@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HappyApp</string>
+    <string name="title_webview">WebView</string>
+    <string name="title_listview">ListView</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="currency">$</string>
+    <string-array name="items_array">
+        <item>Prd 01</item>
+        <item>Prd 02</item>
+        <item>Prd 03</item>
+        <item>Prd 04</item>
+        <item>Prd 05</item>
+        <item>Prd 06</item>
+        <item>Prd 07</item>
+        <item>Prd 08</item>
+        <item>Prd 09</item>
+        <item>Prd 10</item>
+        <item>Prd 11</item>
+        <item>Prd 12</item>
+        <item>Prd 13</item>
+        <item>Prd 14</item>
+        <item>Prd 15</item>
+        <item>Prd 16</item>
+        <item>Prd 17</item>
+        <item>Prd 18</item>
+        <item>Prd 19</item>
+        <item>Prd 20</item>
+    </string-array>
+</resources>

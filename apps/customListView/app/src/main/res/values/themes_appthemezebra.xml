@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="AppThemeZebra" parent="android:Theme.Holo">
+
+    <item name="android:buttonStyle">@style/ButtonAppThemeZebra</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonAppThemeZebra</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerAppThemeZebra</item>
+
+  </style>
+
+</resources>

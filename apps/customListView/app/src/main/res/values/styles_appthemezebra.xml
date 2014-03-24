@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="ButtonAppThemeZebra" parent="android:Widget.Holo.Button">
+	  <item name="android:background">@drawable/appthemezebra_btn_default_holo_dark</item>
+  </style>
+
+  <style name="ImageButtonAppThemeZebra" parent="android:Widget.Holo.ImageButton">
+	  <item name="android:background">@drawable/appthemezebra_btn_default_holo_dark</item>
+  </style>
+
+  <style name="SpinnerAppThemeZebra" parent="android:Widget.Holo.Spinner">
+      <item name="android:background">@drawable/appthemezebra_spinner_background_holo_dark</item>
+      <item name="android:dropDownSelector">@drawable/appthemezebra_list_selector_holo_dark</item>
+  </style>
+
+</resources>
