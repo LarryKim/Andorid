@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TapStopWatch</string>
+    <string name="info">Tap : start/pause/resume\nDouble Tap : reset</string>
+    <string name="reset_time">00:00:00</string>
+</resources>
