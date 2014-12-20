@@ -10,7 +10,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
-
 public class MainActivity extends ActionBarActivity {
     private TextView tvStopwatch;
     private long startTime = 0L;
@@ -47,7 +46,7 @@ public class MainActivity extends ActionBarActivity {
         timeSwap = 0L;
     }
 
-    public class GestureTap extends GestureDetector.SimpleOnGestureListener {
+    private class GestureTap extends GestureDetector.SimpleOnGestureListener {
         @Override
         public boolean onDoubleTap(MotionEvent e) {
             //Log.d(logTag, "---- double tap --------");
@@ -55,15 +54,17 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
     }
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        reset();
     }
 
     @Override
-    protected void onRestoreInstanceState(Bundle savedState) {
-        super.onRestoreInstanceState(savedState);
+    protected void onPause() {
+        super.onPause();
+        reset();
     }
 
     @Override

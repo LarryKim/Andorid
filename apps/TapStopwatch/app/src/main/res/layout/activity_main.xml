@@ -5,8 +5,9 @@
 
     <TextView android:id="@+id/stopwatch" android:layout_width="match_parent"
         android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#fff"
-        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
-        android:layout_marginTop="-50dp"
+        android:textStyle="bold" android:textSize="56sp" android:gravity="center"
+        android:layout_marginTop="-56dp"
+        android:typeface="monospace"
         android:text="@string/reset_time" />
 
     <TextView android:id="@+id/info" android:layout_width="match_parent"
